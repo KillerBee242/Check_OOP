@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="cart">
+        <h1>Shopping Cart</h1>
+
+        <!-- Premier article -->
+        <div class="cart-item">
+            <img src="/images/product.png" alt="Item Image" class="item-image">
+            <div class="item-details">
+                <h2 class="item-name">Female T-shirt</h2>
+                <p class="item-price">$<span class="price" data-unit-price="20.00">20.00</span></p>
+                <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-btn">+</button>
+                </div>
+                <button class="delete-btn">Remove</button>
+                <button class="like-btn">❤</button>
+            </div>
+        </div>
+
+        <!-- Deuxième article -->
+        <div class="cart-item">
+            <img src="/images/product_01.png" alt="Item Image" class="item-image">
+            <div class="item-details">
+                <h2 class="item-name">Male T-shirt</h2>
+                <p class="item-price">$<span class="price" data-unit-price="15.00">15.00</span></p>
+                <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-btn">+</button>
+                </div>
+                <button class="delete-btn">Remove</button>
+                <button class="like-btn">❤</button>
+            </div>
+        </div>
+
+        <!-- Troisième article -->
+        <div class="cart-item">
+            <img src="/images/product_03.png" alt="Item Image" class="item-image">
+            <div class="item-details">
+                <h2 class="item-name">Child T-shirt</h2>
+                <p class="item-price">$<span class="price" data-unit-price="10.00">10.00</span></p>
+                <div class="quantity-controls">
+                    <button class="minus-btn">-</button>
+                    <span class="quantity">1</span>
+                    <button class="plus-btn">+</button>
+                </div>
+                <button class="delete-btn">Remove</button>
+                <button class="like-btn">❤</button>
+            </div>
+        </div>
+
+        <!-- Somme -->
+        <div class="total">
+            <h3>Total: $<span id="total-price">20.00</span></h3>
+        </div>
+    </div>
+
+    <script src="/script.js
+    "></script>
+</body>
+</html>

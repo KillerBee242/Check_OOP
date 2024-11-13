@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cart {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 50px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #151515, -20px -20px 60px #272727;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff7043;
+    font-weight: 600;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    box-shadow: 8px 8px 20px #151515, -8px -8px 20px #272727;
+}
+
+.item-image {
+    width: 130px;
+    margin-right: 15px;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px #151515, inset -5px -5px 10px #272727;
+}
+
+.item-details {
+    flex: 1;
+    color: #ddd;
+    padding-left: 20px;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.item-price {
+    color: #888;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #1e1e1e;
+    border: none;
+    color: #ddd;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px #151515, -5px -5px 15px #272727;
+    transition: box-shadow 0.3s ease;
+}
+
+.quantity-controls button:hover {
+    box-shadow: inset 5px 5px 10px #151515, inset -5px -5px 10px #272727;
+}
+
+.quantity {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.delete-btn, .like-btn {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff7043;
+    color: #1e1e1e;
+    margin-top: 10px;
+    box-shadow: 5px 5px 15px #151515, -5px -5px 15px #272727;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #ff5743;
+    box-shadow: inset 5px 5px 10px #151515, inset -5px -5px 10px #272727;
+}
+
+.like-btn {
+    background-color: transparent;
+    color: #ff7043;
+    font-size: 18px;
+    box-shadow: none;
+    transition: color 0.3s ease;
+}
+
+.like-btn.active {
+    color: #ff5743;
+}
+
+.total {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #ff7043;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 20px #151515, inset -8px -8px 20px #272727;
+}
